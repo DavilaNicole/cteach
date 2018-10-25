@@ -1,0 +1,44 @@
+/*
+  Stylesheet - c.teach
+*/
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+nav.navbarCteach {
+    letter-spacing: 1px;
+    font-size: 25px;
+}
+nav.navbarCteach img {
+    max-width: 125px;
+    max-height: 70px;
+    width: auto;
+    height: auto;
+}
+nav.navbarCteach .navbar-toggler {
+    font-size: 15px;
+    padding: 8px 10px;
+}    
+
+header.principal {
+    position: relative;
+    text-align: center;
+    background-color: purple; 
+    background-image: linear-gradient(-90deg, #C250C2, #4258D0);
+}
+header.principal .header-content {
+    padding-top: 150px;
+    padding-bottom: 50px;
+    color: white;
+}
+header.principal .header-content h1 {
+    font-size: 50px;
+    font-weight: 100px;
+    text-align: left;
+}
+header.principal .header-content p {
+    font-size: 30px;
+    text-align: left;
+}
+@media (min-width: 992px) {
+}
