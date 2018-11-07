@@ -2,12 +2,15 @@
   Stylesheet - c.teach
 */
 body{
-    font-family: 'Source Sans Pro', sans-serif;
+    /* font-family: 'Source Sans Pro', sans-serif; */
+    /* font-family: 'Quicksand', sans-serif; */
+    font-family: 'Muli', 'Helvetica', 'Arial', 'sans-serif';
+    background:  url("../img/fundo.jpg") repeat-x fixed;
 }
-
 nav.navbarCteach {
     letter-spacing: 1px;
-    font-size: 25px;
+    font-size: 20px;
+    background-color: #ffffff;
 }
 nav.navbarCteach img {
     max-width: 125px;
@@ -23,22 +26,254 @@ nav.navbarCteach .navbar-toggler {
 header.principal {
     position: relative;
     text-align: center;
-    background-color: purple; 
-    background-image: linear-gradient(-90deg, #C250C2, #4258D0);
+    width: 100%;
+    background-color: #5f5f5f8e;
+    /* background-color: purple;  */
+    /* background-image: linear-gradient(-90deg, #C250C2, #4258D0); */
 }
 header.principal .header-content {
-    padding-top: 150px;
-    padding-bottom: 50px;
-    color: white;
+    padding-top: 250px;
+    padding-bottom: 250px;
+    color: #ffffff;
+
 }
 header.principal .header-content h1 {
-    font-size: 50px;
-    font-weight: 100px;
-    text-align: left;
+    letter-spacing: 1px;
+    font-size: 60px;
+    font-weight: bold;
 }
 header.principal .header-content p {
-    font-size: 30px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+header.principal .header-content button{
+    height: 100px;
+
+}
+@media (max-width: 992px) {
+    header.principal .header-content {
+        padding-top: 90px;
+        padding-bottom: 50px;
+    }
+    header.principal .header-content h1 {
+        font-size: 35px;
+        text-align: left;
+    }
+    header.principal .header-content p {
+        font-size: 20px;
+    }
+}
+section.quemSomos{
+    position: relative;
     text-align: left;
+    background-color: #ffffff;
+    padding-top: 150px;
+    padding-bottom: 50px;
+    color: #6b6b6b;
+    font-size: 20px;
 }
-@media (min-width: 992px) {
+
+section.quemSomos .pilares {
+    padding-top: 35px;
 }
+section.quemSomos .pilares h1 {
+    font-weight: 700;
+    font-size: 20px;
+}
+section.quemSomos .pilares i {
+    color: rgb(158, 19, 158);
+    font-size: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+section.selecaoPrincipal{
+    background-color: rgba(194, 80, 194, 0.733);
+    padding-top: 250px;
+    padding-bottom: 250px;
+    color: #ffffff;
+    text-align: center;
+}
+section.selecaoPrincipal i{
+    font-size: 150px;
+}
+section.selecaoPrincipal a{
+    font-size: 50px;
+    color: #ffffff;
+}
+section.selecaoPrincipal a:hover{
+    color: #ccc8c8;
+    text-decoration: none;
+}
+
+section.busca {
+    position: relative;
+    padding-top: 150px;
+    padding-bottom: 250px;
+    /* background-color: purple; 
+    background-image: linear-gradient(-90deg, #C250C2, #4258D0); */
+    color: #ffffff;
+}
+
+section.busca .filtros {
+    color: #222222;
+}
+section.busca .resultados-busca {
+    color: #5f5f5f;
+}    
+section.busca .resultados-busca a {
+    color: #5f5f5f;
+}    
+
+section.busca .resultados-busca img {
+    max-width:200px;
+    max-height:150px;
+    width: auto;
+    height: auto;
+}
+
+.footer-distributed{
+    background-color: rgba(81, 82, 90, 0.877);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    font: bold 16px sans-serif;
+    text-align: left;
+
+    padding: 50px 60px 40px;
+    overflow: hidden;
+}
+.footer-distributed img{
+    max-width:200px;
+    max-height:150px;
+    width: auto;
+    height: auto;
+    padding-right: 20px;
+}
+.footer-distributed .footer-left{
+    float: left;
+}
+.footer-distributed h3{
+    color:  #ffffff;
+    margin: 0 0 10px;
+}
+.footer-distributed h3 span{
+    color:  #5383d3;
+}
+.footer-distributed .footer-links{
+    color:  #ffffff;
+    margin: 0 0 10px;
+    padding: 0;
+}
+.footer-distributed .footer-links a{
+    display:inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color:  inherit;
+}
+.footer-distributed .footer-company-name{
+    color:  #d3d3d3;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+.footer-distributed .footer-icons{
+    margin-top: 40px;
+}
+.footer-distributed .footer-icons a{ 
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+.footer-distributed .footer-right{
+    float: right;
+}
+.footer-distributed .footer-right p{
+    display: inline-block;
+    vertical-align: top;
+    margin: 15px 42px 0 0;
+    color: #ffffff;
+}
+.footer-distributed form{
+    display: inline-block;
+}
+.footer-distributed form input,
+.footer-distributed form textarea{
+    display: block;
+    border-radius: 3px;
+    box-sizing: border-box;
+    background-color:  #ffffff;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+    border: none;
+    resize: none;
+    font: inherit;
+    font-size: 14px;
+    font-weight: normal;
+    color:  #222222;
+    width: 400px;
+    padding: 18px;
+}
+.footer-distributed form input{
+    height: 55px;
+    margin-bottom: 15px;
+}
+.footer-distributed form textarea{
+    height: 100px;
+    margin-bottom: 20px;
+}
+.footer-distributed form button{
+    border-radius: 3px;
+    background-color:  #ffffff;
+    color: rgb(33, 33, 34);
+    border: 0;
+    padding: 15px 50px;
+    font-weight: bold;
+    float: right;
+}
+  @media (max-width: 1000px) {
+      .footer-distributed {
+          font: bold 14px sans-serif;
+      }
+      .footer-distributed .footer-company-name{
+          font-size: 12px;
+      }
+      .footer-distributed form input,
+      .footer-distributed form textarea{
+          width: 250px;
+      }
+      .footer-distributed form button{
+          padding: 10px 35px;
+      }
+  }
+  @media (max-width: 800px) {
+      .footer-distributed{
+          padding: 30px;
+      }
+      .footer-distributed .footer-left,
+      .footer-distributed .footer-right{
+          float: none;
+          max-width: 300px;
+          margin: 0 auto;
+      }
+      .footer-distributed .footer-left{
+          margin-bottom: 40px;
+      }
+      .footer-distributed form{
+          margin-top: 30px;
+      }
+      .footer-distributed form{
+          display: block;
+      }
+      .footer-distributed form button{
+          float: none;
+      }
+  }
