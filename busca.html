@@ -11,7 +11,7 @@
         <!-- Fonts -->
         <link rel="stylesheet"      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
         <!-- Icons -->
-        <link rel="stylesheet"      href="vendor/fontawesome-free/css/all.min.css">
+        <!-- <link rel="stylesheet"      href="vendor/fontawesome-free/css/all.min.css"> -->
 		<link rel="stylesheet"      href="vendor/font-awesome/css/font-awesome.css">
         <!-- Favicon -->
         <link rel="shortcut icon"   href="favicon.ico">
@@ -95,7 +95,7 @@
                                                         </select>
                                                     </div>
                                                     <hr>
-                                                    <button type="btn" class="btn btn-primary">Buscar</button>
+                                                    <button type="btn" class="btn btn-primary" id="btnPesquisar">Buscar</button>
                                                     <button type="btn" class="btn btn-primary">Reiniciar filtros</button>
                                                     <div class="pb-3"></div>
                                                 </form>
@@ -117,63 +117,19 @@
                         <!-- Resultados - Planos - 1 por linha  -->
                         <div class="row mb-3 resultados-busca">
                             <div class="col-md-12">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <div class="row">
-                                            <div class="col-md-3">
-                                                <img src="img/matematica.png">
-                                            </div>
-                                            <div class="col-md-6 card-body">
-                                                <div class="list-title">
-                                                    <ul class="list-inline list-unstyled">
-                                                    <li class="list-inline-item"><a href="#"><h4>Matemática 2a série</h4></a></li>
-                                                    <li class="list-inline-item text-warning"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half"></i></li>
-                                                    <!-- <li class="list-inline-item text-success"><i class="fa fa-thumbs-up"></i></li> -->
-                                                </ul>
-                                                </div>
-                                                <div class="list-location">
-                                                    <p>Tabuada - 1 ao 10 </p>
-                                                </div>
-                                                <div class="list-descrip">
-                                                    <small>Dinâmica com jogo de tabuleiro para ensinar tabuada. </small>  
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3 border-left card-body">
-                                                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#exemploMath">Saiba mais</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Resultados - Planos - 1 por linha  -->
-                        <div class="row mb-3 resultados-busca">
-                            <div class="col-md-12">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <div class="row">
-                                            <div class="col-md-3">
-                                                <img src="img/biologia.png">
-                                            </div>
-                                            <div class="col-md-6 card-body">
-                                                <div class="list-title">
-                                                    <ul class="list-inline list-unstyled">
-                                                    <li class="list-inline-item"><a href="#"><h4>Biologia 6a série</h4></a></li>
-                                                    <li class="list-inline-item text-warning"><i <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></i></li>
-                                                </ul>
-                                                </div>
-                                                <div class="list-location">
-                                                    <p>Corpo humano </p>
-                                                </div>
-                                                <div class="list-descrip">
-                                                    <small>Dinâmica com jogo sobre ossos do corpo humano. </small>  
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3 border-left card-body">
-                                                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#exemploBio">Saiba mais</button>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="table-wrapper">
+                                    <table id="tabelaResultados" class="table-responsive card-list-table">
+                                        <thead>
+                                            <tr>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <div id="resultado"></div>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
                         </div>
@@ -205,12 +161,16 @@
                 </form>
             </div>
         </footer>
-            <!-- Bootstrap core JavaScript -->
+
+        <div id="consulta" class="modal fade" role="dialog"></div>
+        <!-- Bootstrap core JavaScript -->
         <script src="vendor/jquery/jquery.min.js"></script>
         <!-- Plugin JavaScript -->
-        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-		<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="vendor/jquery/jquery.easing.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="js/cteach.tmpl.js"></script>
         <!-- Custom scripts for this template -->
         <script src="js/cteach.js"></script>
+        <script src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
     </body>
 </html>
