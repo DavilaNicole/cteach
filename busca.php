@@ -29,10 +29,10 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarOptions">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active"><a class="nav-link" href="index.html">Principal</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html">Principal</a></li>
                         <li class="nav-item"><a class="nav-link" href="index.html#quemSomos">Quem Somos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="planos.html">Planos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="login.html">Acesse</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="busca.php">Busca</a></li>
+                        <li class="nav-item"><a class="nav-link" href="login.php">Acesse</a></li>
                     </ul>
                 </div>    
             </div>    
