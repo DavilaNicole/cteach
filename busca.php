@@ -21,7 +21,7 @@
         <!-- Barra de navegação -->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top navbarCteach">
             <div class="container">
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="index.php">
                     <img src="img/logo.png" alt="Logo c.teach">
                 </a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarOptions" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,8 +29,8 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarOptions">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Principal</a></li>
-                        <li class="nav-item"><a class="nav-link" href="index.html#quemSomos">Quem Somos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.php">Principal</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.php#quemSomos">Quem Somos</a></li>
                         <li class="nav-item active"><a class="nav-link" href="busca.php">Busca</a></li>
                         <li class="nav-item"><a class="nav-link" href="login.php">Acesse</a></li>
                     </ul>
