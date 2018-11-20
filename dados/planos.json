@@ -1,0 +1,31 @@
+[
+    {
+        "id": 0,
+        "titulo": "Matemática 2a série",
+        "subtitulo": "Tabuada - 1 ao 10",
+        "resumo": "Dinâmica com jogo de tabuleiro para ensinar tabuada",
+        "publico": "Estudantes da 2a série do ensino fundamental",
+        "duracao": "60 minutos",
+        "materiais": "a, b e c",
+        "descricao": "Teste de descrição de uma atividade de Matemática para a segunda série do ensino fundamental. Vamos tentar gerar mais linhas para ver como fica",
+        "imagem": "img/matematica.png",
+        "expectativa": "A expectativa é que os alunxs lindxs aprendam a tabuada!!!",
+        "autor": "Nicole Davila",
+        "criacao": 20181027
+    },
+    {
+        "id": 1,
+        "titulo": "Biologia 6a série",
+        "subtitulo": "Corpo humano",
+        "resumo": "Ossos do corpo humano.",
+        "publico": "Estudantes da 6a série do ensino fundamental",
+        "duracao": "30 minutos",
+        "materiais": "a, b e c",
+        "descricao": "Teste de descrição de uma atividade de Matemática para a segunda série do ensino fundamental. Vamos tentar gerar mais linhas para ver como fica",
+        "imagem": "img/biologia.png",
+        "expectativa": "A expectativa é que os alunxs lindxs aprendam os ossos do corpo humano!!!",
+        "autor": "Nicole Davila",
+        "criacao": 20181101
+        
+    }
+]

@@ -53,4 +53,3 @@ var planos = {
     $('#consulta .modal-body').html(planos.plano[id].subtitulo);
     $('#consulta').modal('show'); 
 });
-

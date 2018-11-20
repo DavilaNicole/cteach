@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>c.teach</title>
+        <meta name="description" content="Plataforma para compartilhar planos de aula.">
+        
+        <!-- <link rel="stylesheet"      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+        <link rel="stylesheet"      href="bootstrap/css/bootstrap.css">
+        <link rel="stylesheet"      href="css/cteach.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet"      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+        <!-- Icons -->
+        <!-- <link rel="stylesheet"      href="fontawesome-free/css/all.min.css"> -->
+		<link rel="stylesheet"      href="font-awesome/css/font-awesome.css">
+        <!-- Favicon -->
+        <link rel="shortcut icon"   href="favicon.ico">
+        <link rel="icon"            href="favicon.ico">
+    </head>
+    <body>
+        <!-- Barra de navegação -->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top navbarCteach">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo.png" alt="Logo c.teach">
+                </a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarOptions" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarOptions">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Principal</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#quemSomos">Quem Somos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="busca.html">Busca</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="login.html">Acesse</a></li>
+                    </ul>
+                </div>    
+            </div>    
+        </nav>
+        <section class="cadastro">
+            <div class="container">
+                <h3>Cadastro de plano de aula</h3>
+                <form class="form-horizontal" role="form">
+                    <div class="form-group form-group-lg">
+                        <label class="control-label col-lg-2" for="textinput">Título</label>
+                        <div class="col-lg-12">
+                            <input type="text" class="form-control" placeholder="Qual o propósito geral deste plano de aula? Exemplo: Matemática básica da 2a série">
+                        </div>
+                    </div>
+                    <div class="form-group form-group-lg">
+                        <label class="control-label col-lg-2" for="textinput">Assunto</label>
+                        <div class="col-lg-12">
+                            <select class="form-control">
+                                <option>Indefinido</option>
+                                <option>Matemática</option>
+                                <option>Língua Portuguesa</option>
+                                <option>Biologia</option>
+                                <option>Geografia</option>
+                                <option>História</option>
+                                <option>Artes</option>
+                            </select>   
+                        </div>
+                    </div>
+                    <div class="form-group form-group-lg">
+                        <label class="control-label col-lg-12" for="comment">Resumo (Opcional)</label>
+                        <div class="col-lg-12">
+                            <textarea type="text" class="form-control"  rows="2" placeholder="Em poucas linhas, sobre o que é o plano de aula?"></textarea>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="form-group form-group-lg">
+                        <label class="control-label col-lg-2" for="comment">Descrição</label>
+                        <div class="col-lg-12">
+                            <textarea type="text" class="form-control" rows="5" placeholder="Aqui você descreverá com detalhes como conduzir a atividade, dinâmica ou apresentação do conteúdo"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group form-group-lg">
+                        <label class="control-label col-lg-2" for="comment">Duração prevista</label>
+                        <div class="col-lg-12">
+                            <select class="form-control" id="sel1">
+                                <option>Até 30 minutos</option>
+                                <option>30 minutos até 1 hora</option>
+                                <option>1 hora até 2 horas</option>
+                                <option>2 horas ou mais</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group form-group-lg">
+                        <label class="control-label col-lg-12" for="comment">Etapa/modalidade</label>
+                        <div class="col-lg-12">
+                            <select class="form-control">
+                                <option>Educação Infantil</option>
+                                <option>Ensino Fundamental</option>
+                                <option>Ensino Médio</option>
+                                <option>Educação Escolar Indígena</option>
+                                <option>Educação Especial</option>
+                                <option>Educação do Campo</option>
+                                <option>Educação Escolar Quilombola</option>
+                                <option>Educação de Jovens e Adultos (EJA)</option>
+                                <option>Educação Profissional</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group form-group-lg">
+                        <label class="control-label col-lg-12" for="comment">Série/ano</label>
+                        <div class="col-lg-12">
+                            <select class="form-control">
+                                <option>Não se aplica</option>
+                                <option>1a série</option>
+                                <option>2a série</option>
+                                <option>3a série</option>
+                                <option>4a série</option>
+                                <option>5a série</option>
+                                <option>6a série</option>
+                                <option>7a série</option>
+                                <option>8a série</option>
+                                <option>9a série</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group form-group-lg">
+                        <label class="control-label col-lg-2" for="comment">Materiais</label>
+                        <div class="col-lg-12">
+                            <input type="text" placeholder="Quais os materiais necessários para tornar real esse plano de aula?" class="form-control">
+                        </div>
+                    <div class="form-group form-group-lg">
+                        <label class="control-label col-lg-12" for="comment">Expectativa (Opcional)</label>
+                        <div class="col-lg-12">
+                            <input type="text" placeholder="O que se espera alcançar com esse plano de aula?" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-offset-2 col-lg-12">
+                            <div class="pull-right">
+                                <button type="submit" class="btn btn-default btn-lg">Cancelar</button>
+                                <button type="submit" class="btn btn-primary btn-lg">Salvar plano de aula</button>
+                            </div>
+                        </div>
+                    </div>                                 
+                </form>
+            </div>
+        </section>
+		<!-- Rodapé da página -->
+		<footer class="footer-distributed">
+            <div class="footer-left">
+                <img src="img/logo.png" class="img-fluid" alt="Logo do c.teach">
+                <p class="footer-links">
+                    <a href="index.html#index">Principal</a> .
+                    <a href="busca.html">Pesquisar</a> .
+                    <a href="login.html">Acesso</a>
+                </p>
+                <p class="footer-company-name">C.teach © 2018</p>
+                <div class="footer-icons">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <p>Contato</p>
+                <form action="#" method="post">
+                    <input type="text" name="email" placeholder="E-mail">
+                    <textarea name="message" placeholder="Messagem"></textarea>
+                    <button>Enviar</button>
+                </form>
+            </div>
+        </footer>
+        <!-- Bootstrap core JavaScript -->
+        <script src="jquery/jquery.min.js"></script>
+        <!-- Plugin JavaScript -->
+        <script src="jquery/jquery.easing.min.js"></script>
+        <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="js/cteach.tmpl.js"></script>
+        <!-- Custom scripts for this template -->
+        <script src="js/cteach.js"></script>
+        <script src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
+    </body>
+</html>

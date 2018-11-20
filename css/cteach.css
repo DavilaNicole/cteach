@@ -133,6 +133,42 @@ section.busca .resultados-busca img {
     height: auto;
 }
 
+section.cadastro {
+    background-color: #5f5f5f8e;
+    padding-top: 250px;
+    padding-bottom: 250px;
+    color: #ffffff;
+}
+section.cadastro label {
+    font-size: 20px;
+}
+section.cadastro h3 {
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+
+section.login {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    background-color: #5f5f5f8e;
+    padding-top: 250px;
+    padding-bottom: 250px;
+    color: #ffffff;
+}
+section.login h1 {
+    letter-spacing: 1px;
+    font-size: 60px;
+    font-weight: bold;
+}
+section.login a {
+    letter-spacing: 1px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+
 .footer-distributed{
     background-color: rgba(81, 82, 90, 0.877);
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
